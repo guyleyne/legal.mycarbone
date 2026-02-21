@@ -93,6 +93,55 @@
             padding: 1rem;
             border-bottom: 1px solid #e2e8f0;
         }
+        /* Styles pour le formulaire */
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: #1e293b;
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            font-family: inherit;
+            font-size: 1rem;
+            transition: border-color 0.2s;
+        }
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #1e7b5e;
+            box-shadow: 0 0 0 3px rgba(30, 123, 94, 0.1);
+        }
+        .btn-submit {
+            background: #1e7b5e;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        .btn-submit:hover {
+            background: #0b4d3c;
+        }
+        .email-display {
+            background: #f8fafc;
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+            font-family: monospace;
+            font-size: 1.1rem;
+            border: 1px solid #e2e8f0;
+        }
         .footer {
             background: #f1f5f9;
             padding: 2rem 3rem;
@@ -145,11 +194,7 @@
             <p>La présente politique décrit le traitement des informations par l'extension navigateur MyCarbone, conçue selon le principe de Privacy by Design.</p>
 
             <h2>2. Éditeur</h2>
-            <p>MyCarbone est une extension indépendante. Contact :</p>
-            <ul>
-                <li><strong>Email :</strong> contact@mycarbone.app</li>
-                <li><strong>Site :</strong> www.mycarbone.app</li>
-            </ul>
+            <p>MyCarbone est une extension indépendante.</p>
 
             <h2>3. Données collectées</h2>
             
@@ -177,15 +222,43 @@
             <p>MyCarbone n'est pas qualifié de "responsable de traitement" au sens du RGPD : les données sont strictement locales, anonymes et non transmises.</p>
 
             <h2>5. Contact</h2>
-            <p>Pour toute question relative à cette politique :</p>
-            <p><strong>Email :</strong> contact@mycarbone.app</p>
-            <p><strong>Délai de réponse :</strong> 48 heures ouvrées</p>
+            
+            <p>Vous pouvez nous contacter par email à :</p>
+            <div class="email-display">
+                📧 <strong>mfv4f731@anonaddy.me</strong>
+            </div>
+            
+            <p style="margin: 1.5rem 0 1rem 0;">Ou via le formulaire sécurisé ci-dessous :</p>
+
+            <!-- FORMULAIRE DE CONTACT -->
+            <form action="https://formspree.io/f/xxxxxxxx" method="POST">
+                <div class="form-group">
+                    <label for="name">Nom complet</label>
+                    <input type="text" id="name" name="name" required placeholder="Votre nom">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="votre@email.com">
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Votre message..."></textarea>
+                </div>
+                
+                <button type="submit" class="btn-submit">Envoyer le message</button>
+            </form>
+
+            <p style="margin-top: 1rem; font-size: 0.9rem; color: #64748b;">
+                Réponse garantie sous 48 heures ouvrées. Votre message nous est transmis de manière sécurisée.
+            </p>
         </div>
         
         <div class="footer">
             <p>© 2026 MyCarbone · Extension indépendante</p>
             <p style="margin-top: 0.5rem;">
-                <a href="https://guyleyne.github.io/legal.mycarbone/entreprise.html">Documentation entreprise</a>
+                <a href="https://guyleyne.github.io/legal.mycarbone/deployment-guide.html">Guide de déploiement entreprise</a>
             </p>
         </div>
     </div>
