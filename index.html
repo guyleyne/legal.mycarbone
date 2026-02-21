@@ -36,24 +36,22 @@
             margin-bottom: 0.5rem;
             letter-spacing: -0.02em;
         }
-        .header .badge {
-            display: inline-block;
-            background: rgba(255,255,255,0.2);
-            padding: 0.5rem 1rem;
-            border-radius: 100px;
-            font-size: 0.9rem;
-            margin-top: 1rem;
+        .header .domain {
+            font-size: 1rem;
+            opacity: 0.8;
+            font-family: monospace;
+            margin-top: 0.5rem;
         }
         .content {
             padding: 3rem;
         }
-        .summary-box {
-            background: #e8f5f0;
+        .legal-notice {
+            background: #f1f5f9;
             border-left: 4px solid #1e7b5e;
             padding: 1.5rem;
-            border-radius: 12px;
-            margin-bottom: 2.5rem;
-            font-weight: 500;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            font-size: 0.95rem;
         }
         h2 {
             color: #0b4d3c;
@@ -77,13 +75,10 @@
         li {
             margin-bottom: 0.5rem;
         }
-        .table-container {
-            overflow-x: auto;
-            margin: 1.5rem 0;
-        }
         table {
             width: 100%;
             border-collapse: collapse;
+            margin: 1.5rem 0;
             background: #f8fafc;
             border-radius: 12px;
             overflow: hidden;
@@ -98,22 +93,11 @@
             padding: 1rem;
             border-bottom: 1px solid #e2e8f0;
         }
-        tr:last-child td {
-            border-bottom: none;
-        }
-        .note {
-            background: #fef9e7;
-            border-left: 4px solid #fbbf24;
-            padding: 1rem 1.5rem;
-            border-radius: 8px;
-            margin: 1.5rem 0;
-            font-size: 0.95rem;
-        }
         .footer {
             background: #f1f5f9;
             padding: 2rem 3rem;
             text-align: center;
-            color: #64748b;
+            color: #475569;
             border-top: 1px solid #e2e8f0;
         }
         .footer a {
@@ -142,92 +126,66 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>MyCarbone</h1>
-            <p style="font-size: 1.2rem; opacity: 0.9;">Extension navigateur · v4.0</p>
-            <div class="badge">📋 Politique de Confidentialité</div>
+            <h1>MyCarbon</h1>
+            <p style="font-size: 1.2rem; opacity: 0.9;">Extension navigateur · Version 4.0</p>
+            <div class="domain">legal.mycarbon</div>
         </div>
         
         <div class="content">
             <div class="meta-info">
-                <span>📅 Version 1.0 · 21 février 2026</span>
-                <span>✉️ contact@mycarbone.app</span>
+                <span>Version 1.0 · 21 février 2026</span>
+                <span>contact@mycarbon.app</span>
             </div>
 
-            <div class="summary-box">
-                <strong>🔍 RÉSUMÉ EN UNE PHRASE :</strong> MyCarbone ne collecte aucune donnée personnelle, ne communique avec aucun serveur distant, et ne stocke vos données que localement dans votre propre navigateur. Vous en avez le contrôle total à tout moment.
+            <div class="legal-notice">
+                <strong>PRINCIPE FONDAMENTAL :</strong> MyCarbon ne collecte aucune donnée personnelle, ne communique avec aucun serveur distant, et stocke exclusivement les données dans le navigateur de l'utilisateur.
             </div>
 
-            <h2>1. Objet de la présente politique</h2>
-            <p>La présente Politique de Confidentialité décrit la manière dont l'extension de navigateur MyCarbone traite les informations de ses utilisateurs.</p>
-            <p>MyCarbone a été conçue selon le principe du <strong>Privacy by Design</strong> : la protection de votre vie privée est intégrée dans son architecture même, et non ajoutée après coup.</p>
+            <h2>1. Objet</h2>
+            <p>La présente politique décrit le traitement des informations par l'extension navigateur MyCarbon, conçue selon le principe de Privacy by Design.</p>
 
-            <h2>2. Identité de l'éditeur</h2>
-            <p>L'extension MyCarbone est éditée de manière indépendante. Pour toute question relative à la confidentialité :</p>
+            <h2>2. Éditeur</h2>
+            <p>MyCarbon est une extension indépendante. Contact :</p>
             <ul>
-                <li><strong>Email :</strong> contact@mycarbone.app</li>
-                <li><strong>Site web :</strong> www.mycarbone.app</li>
-                <li><strong>Réponse garantie sous 48h ouvrables</strong></li>
+                <li><strong>Email :</strong> contact@mycarbon.app</li>
+                <li><strong>Site :</strong> www.mycarbon.app</li>
             </ul>
 
-            <h2>3. Données collectées — Architecture 100 % locale</h2>
+            <h2>2. Données collectées</h2>
             
-            <h3>3.1 Ce que nous ne collectons PAS</h3>
-            <p>MyCarbone ne collecte, ne transmet, ne vend et ne partage AUCUNE des informations suivantes :</p>
+            <h3>2.1 Absence de collecte</h3>
+            <p>MyCarbon ne collecte aucune des informations suivantes :</p>
             <ul>
-                <li>❌ Votre identité (nom, prénom, email, adresse IP)</li>
-                <li>❌ Votre historique de navigation</li>
-                <li>❌ Le contenu de vos conversations avec les IA</li>
-                <li>❌ Vos données professionnelles ou personnelles</li>
-                <li>❌ Tout identifiant permettant de vous identifier</li>
+                <li>Identité (nom, prénom, email, adresse IP)</li>
+                <li>Historique de navigation</li>
+                <li>Contenu des conversations avec les IA</li>
+                <li>Données professionnelles ou personnelles</li>
+                <li>Identifiants de quelque nature que ce soit</li>
             </ul>
 
-            <h3>3.2 Ce qui est stocké localement</h3>
-            <p>L'Extension stocke exclusivement dans le stockage local de votre navigateur :</p>
+            <h3>2.2 Stockage local exclusif</h3>
+            <p>L'extension stocke localement, dans le navigateur :</p>
             <ul>
-                <li>📊 Nombre de requêtes par plateforme IA</li>
-                <li>🌍 Estimation du CO₂ associé (calcul local)</li>
-                <li>📅 Historique agrégatif (30 jours maximum)</li>
-                <li>🎯 Votre budget carbone (si configuré)</li>
-                <li>🔄 Date de dernière réinitialisation</li>
+                <li>Nombre de requêtes par plateforme IA</li>
+                <li>Estimation CO₂ (calcul local)</li>
+                <li>Historique agrégé (30 jours)</li>
+                <li>Budget carbone (si configuré)</li>
+                <li>Date de dernière réinitialisation</li>
             </ul>
-            <p class="note">Ces données sont strictement agrégées et anonymes par conception.</p>
 
-            <h2>4. Traitement des données</h2>
-            
-            <h3>4.1 Interception des requêtes</h3>
-            <p>L'Extension intercepte localement les requêtes HTTP vers les plateformes IA via l'API webRequest — uniquement pour analyser les URLs de destination, <strong>sans accéder au contenu</strong>.</p>
+            <h2>3. Base légale</h2>
+            <p>MyCarbon n'est pas qualifié de "responsable de traitement" au sens du RGPD : les données sont strictement locales, anonymes et non transmises.</p>
 
-            <h3>4.2 Calcul du CO₂</h3>
-            <p>Réalisé entièrement en local, sur la base de facteurs d'émission publics (Luccioni et al. 2023, IEA 2024).</p>
-
-            <h3>4.3 Génération des rapports PDF</h3>
-            <p>Les PDF sont générés localement via jsPDF (CDN Cloudflare). Le fichier est téléchargé directement sur votre appareil.</p>
-
-            <h2>5. Base légale (RGPD)</h2>
-            <p>MyCarbone n'est pas qualifié de "responsable de traitement" au sens du RGPD : les données sont strictement locales, anonymes et non transmises.</p>
-
-            <h2>6. Partage avec des tiers</h2>
-            <div class="table-container">
-                <table>
-                    <tr><th>Tiers</th><th>Accès à vos données</th></tr>
-                    <tr><td>Publicité / Marketing</td><td><strong>Aucun accès</strong></td></tr>
-                    <tr><td>Réseaux sociaux</td><td><strong>Aucun accès</strong></td></tr>
-                    <tr><td>Analytics / Tracking</td><td><strong>Aucun accès</strong></td></tr>
-                    <tr><td>Plateformes IA</td><td><strong>Aucun accès</strong></td></tr>
-                    <tr><td>Autorités</td><td><strong>Impossible (données 100% locales)</strong></td></tr>
-                </table>
-            </div>
-
-            <h2>7. Contact</h2>
-            <p>📧 <strong>contact@mycarbone.app</strong><br>🔗 www.mycarbone.app</p>
-
-            <p style="margin-top: 2rem; font-style: italic;">MyCarbone — L'IA a une empreinte. Mesurons-la ensemble.</p>
+            <h2>4. Contact</h2>
+            <p>Pour toute question relative à cette politique :</p>
+            <p><strong>Email :</strong> contact@mycarbon.app</p>
+            <p><strong>Délai de réponse :</strong> 48 heures ouvrées</p>
         </div>
         
         <div class="footer">
-            <p>© 2026 MyCarbone · Extension indépendante</p>
-            <p style="margin-top: 0.5rem; font-size: 0.85rem;">
-                <a href="entreprise.html">📦 Guide de déploiement entreprise</a>
+            <p>© 2026 MyCarbon · Extension indépendante</p>
+            <p style="margin-top: 0.5rem;">
+                <a href="https://guyleyne.github.io/legal.mycarbon/entreprise.html">Documentation entreprise</a>
             </p>
         </div>
     </div>
